@@ -1,0 +1,101 @@
+l=0
+while l==0:
+    print(".__________________.")
+    print("|____ALISHER ONLINE TUTION CENTRE____|")
+    print("|__________________|")
+    print("|                1.INSTRUCTERS                       |")   
+    print("|                2.STUDENTS                          |")
+    print("|                3.TUTION CENTRE                     |")   
+    print("|                4.COURSES                           |")
+    print("|                5.CONTACT INFORMATION               |")   
+    print("|                6.EXIT                              |")
+    print("|__________________|")
+    i=(int(input("PRESS THE NUMBERS GIVEN ABOVE TO GET MENTIONED INFORMATION\n")))
+    if i==1:
+        print(" Name of Instructors ")
+        class instructors:
+            def _init_(self,name,qua,exp):
+                self.name=name
+                self.qua=qua
+                self.exp=exp
+        ins1=instructors("Ali Sher","M.phil CS","2years")
+        ins2=instructors("Ma'am Ayesha Hakim","Phd CS","4 years")
+        print("1.NAME: "+ins1.name)
+        print("  QUALIFICATION: "+ins1.qua)
+        print("  EXPEREINCE: "+ins1.exp)
+        print("2.NAME: "+ins2.name)
+        print("  QUALIFICATION: "+ins2.qua)
+        print("  EXPEREINCE: "+ins2.exp)
+    elif i==2:
+        print(" Name of students ")
+        class students:
+            def _init_(self,name,reg_no,section):
+                self.name=name
+                self.reg_no=reg_no
+                self.section=section
+        std1=students("Ahmad","2022-uam-1910","BsCS(D)")
+        std2=students("Amjad","2022-uam-1969","BsCS(D)")
+        std3=students("sameena","2022-uam-1973","BsCs(D)")
+        print("1.NAME: "+std1.name)
+        print("  Registration num: "+std1.reg_no)
+        print("  SECTION: "+std1.section)
+        print("2.NAME: "+std2.name)
+        print("  Registration num: "+std2.reg_no)
+        print("  SECTION: "+std2.section)
+        print("3.NAME: "+std3.name)
+        print("  Registration num: "+std3.reg_no)
+        print("  SECTION: "+std3.section)
+    elif i==3:
+        print(" Tution centre ")
+        class centre:
+            def _init_(self,num_of_offices,num_of_rooms,num_of_staffrooms,num_of_playgrounds):
+                self.num_of_offices=num_of_offices
+                self.num_of_rooms=num_of_rooms
+                self.num_of_staffrooms=num_of_staffrooms
+                self.num_of_playgrounds=num_of_playgrounds
+        ctr1=centre("2","15","3","2")
+        print("Office :"+ctr1.num_of_offices)
+        print("Rooms :"+ctr1.num_of_rooms)
+        print("Staff Roooms :"+ctr1.num_of_staffrooms)
+        print("Play grounds :"+ctr1.num_of_playgrounds)
+    elif i==4:
+        print(" courses list ")
+        class courses:
+            def _init_(self,name,duration,fee):
+                self.name=name
+                self.duration=duration
+                self.fee=fee
+        course1=courses("Web development","3 months","RS_35000")
+        course2=courses("Python programming","2 months","RS_25000")
+        course3=courses("Java programming","2.5 months","RS_30000")
+        course4=courses("Data science","4 months","RS_45000")
+        course5=courses("Mobile app development","3.5 months","RS_40000")
+        print("1."+course1.name)
+        print(course1.duration)
+        print(course1.fee)
+        print("2."+course2.name)
+        print(course2.duration)
+        print(course2.fee)
+        print("3."+course3.name)
+        print(course3.duration)
+        print(course3.fee)
+        print("4."+course4.name)
+        print(course4.duration)
+        print(course4.fee)
+        print("5."+course5.name)
+        print(course5.duration)
+        print(course5.fee)
+    elif i==5:
+        print(" Contact Information ")
+        class contact_info:
+            def _init_(self,adress,phn_num,e_mail):
+                self.adress=adress
+                self.phn_num=phn_num
+                self.e_mail=e_mail
+        ci1=contact_info("chungi no 6,bosan road,Multan","061-5678345","Alisher@gmial.com")
+        print("Address: "+ci1.adress)
+        print("Contact number: "+ci1.phn_num)
+        print("Email: "+ci1.e_mail)
+    elif i==6:
+        print("Good Bye !")
+        l=1
